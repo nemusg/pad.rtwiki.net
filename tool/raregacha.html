@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>レアガチャ限所有率 - rtwiki.net</title>
+
+<meta name="keywords" content="パズドラ,攻略Wiki,iPhone,Android,パズル＆ドラゴンズ">
+<link rel="stylesheet" type="text/css" media="all" href="http://pad.rtwiki.net/skin/pukiwiki.css?150105">
+<link rel="stylesheet" type="text/css" media="all" href="tool.css">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1,user-scalable=no">
+
+</head>
+<body class="smtSkin">
+
+<div id="header">
+<a class="logo" href="http://pad.rtwiki.net/">[パズドラW攻略Wiki] rtwiki</a>
+
+<h1 class="title">レアガチャ限所有率</h1>
+    <span class="small">
+   <span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a itemprop="url" href="/"><span itemprop="title">パズドラW攻略Wiki</span></a></span> &gt; ツール &gt; レアガチャ限所有率  </span>
+ 
+</div>
+
+<div class="panel">
+
+<ul class="yokoLink cfx">
+<li><a href="clear.html">降臨モンスター所有率</a></li>
+<li><span class="active">レアガチャ限所有率</span></li>
+<li><a href="collabo.html">コラボガチャ限所有率</a></li>
+</ul>
+
+
+<div class="panelInner">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 画面上部 -->
+<ins class="adsbygoogle ads_top"
+     style="display:block"
+     data-ad-client="ca-pub-1121071461261545"
+     data-ad-slot="8570403912"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<form id="my-form">
+
+<p>（主要な）レアガチャでしか入手できないモンスターの所有率を表示します <br>
+<span style="font-size:x-small;color:#666;">下記から、所有しているモンスターを選択してください。</span></p>
+
+<p>
+<span id="maker-kekka1">所有率<em>0</em>％です。（0/0）</span>
+</p>
+
+<div class="maker">
+<div class="allCheck" onclick="maker1();">
+<input type="checkbox" id="allCheck01"><label for="allCheck01">全選択・全解除</label>
+</div>
+<div onclick="maker1();">
+	<div class="group1">
+	<h2>西洋神</h2>
+	<label><input type="checkbox" id="122" value="122" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/122-2x.png);"></span></label>
+	<label><input type="checkbox" id="124" value="124" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/124-2x.png);"></span></label>
+	<label><input type="checkbox" id="126" value="126" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/126-2x.png);"></span></label>
+	<label><input type="checkbox" id="128" value="128" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/128-2x.png);"></span></label>
+	<label><input type="checkbox" id="130" value="130" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/130-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>和神</h2>
+	<label><input type="checkbox" id="132" value="132" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/132-2x.png);"></span></label>
+	<label><input type="checkbox" id="134" value="134" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/134-2x.png);"></span></label>
+	<label><input type="checkbox" id="136" value="136" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/136-2x.png);"></span></label>
+	<label><input type="checkbox" id="138" value="138" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/138-2x.png);"></span></label>
+	<label><input type="checkbox" id="140" value="140" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/140-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>東洋神</h2>
+	<label><input type="checkbox" id="236" value="236" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/236-2x.png);"></span></label>
+	<label><input type="checkbox" id="238" value="238" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/238-2x.png);"></span></label>
+	<label><input type="checkbox" id="240" value="240" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/240-2x.png);"></span></label>
+	<label><input type="checkbox" id="242" value="242" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/242-2x.png);"></span></label>
+	<label><input type="checkbox" id="244" value="244" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/244-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>北欧神</h2>
+	<label><input type="checkbox" id="368" value="368" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/368-2x.png);"></span></label>
+	<label><input type="checkbox" id="370" value="370" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/370-2x.png);"></span></label>
+	<label><input type="checkbox" id="372" value="372" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/372-2x.png);"></span></label>
+	<label><input type="checkbox" id="374" value="374" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/374-2x.png);"></span></label>
+	<label><input type="checkbox" id="376" value="376" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/376-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>ライダー</h2>
+	<label><input type="checkbox" id="378" value="378" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/378-2x.png);"></span></label>
+	<label><input type="checkbox" id="380" value="380" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/380-2x.png);"></span></label>
+	<label><input type="checkbox" id="382" value="382" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/382-2x.png);"></span></label>
+	<label><input type="checkbox" id="384" value="384" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/384-2x.png);"></span></label>
+	<label><input type="checkbox" id="386" value="386" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/386-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>エジプト</h2>
+	<label><input type="checkbox" id="490" value="490" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/490-2x.png);"></span></label>
+	<label><input type="checkbox" id="492" value="492" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/492-2x.png);"></span></label>
+	<label><input type="checkbox" id="494" value="494" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/494-2x.png);"></span></label>
+	<label><input type="checkbox" id="496" value="496" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/496-2x.png);"></span></label>
+	<label><input type="checkbox" id="498" value="498" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/498-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>忍者</h2>
+	<label><input type="checkbox" id="555" value="555" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/555-2x.png);"></span></label>
+	<label><input type="checkbox" id="557" value="557" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/557-2x.png);"></span></label>
+	<label><input type="checkbox" id="559" value="559" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/559-2x.png);"></span></label>
+	<label><input type="checkbox" id="561" value="561" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/561-2x.png);"></span></label>
+	<label><input type="checkbox" id="563" value="563" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/563-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>新西洋神</h2>
+	<label><input type="checkbox" id="567" value="567" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/567-2x.png);"></span></label>
+	<label><input type="checkbox" id="569" value="569" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/569-2x.png);"></span></label>
+	<label><input type="checkbox" id="571" value="571" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/571-2x.png);"></span></label>
+	<label><input type="checkbox" id="573" value="573" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/573-2x.png);"></span></label>
+	<label><input type="checkbox" id="575" value="575" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/575-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>天使</h2>
+	<label><input type="checkbox" id="620" value="620" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/620-2x.png);"></span></label>
+	<label><input type="checkbox" id="622" value="622" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/622-2x.png);"></span></label>
+	<label><input type="checkbox" id="624" value="624" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/624-2x.png);"></span></label>
+	<label><input type="checkbox" id="626" value="626" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/626-2x.png);"></span></label>
+	<label><input type="checkbox" id="628" value="628" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/628-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>悪魔</h2>
+	<label><input type="checkbox" id="630" value="630" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/630-2x.png);"></span></label>
+	<label><input type="checkbox" id="632" value="632" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/632-2x.png);"></span></label>
+	<label><input type="checkbox" id="634" value="634" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/634-2x.png);"></span></label>
+	<label><input type="checkbox" id="636" value="636" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/636-2x.png);"></span></label>
+	<label><input type="checkbox" id="638" value="638" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/638-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>四獣神</h2>
+	<label><input type="checkbox" id="745" value="745" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/745-2x.png);"></span></label>
+	<label><input type="checkbox" id="747" value="747" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/747-2x.png);"></span></label>
+	<label><input type="checkbox" id="749" value="749" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/749-2x.png);"></span></label>
+	<label><input type="checkbox" id="751" value="751" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/751-2x.png);"></span></label>
+	<label><input type="checkbox" id="753" value="753" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/753-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>新和神</h2>
+	<label><input type="checkbox" id="799" value="799" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/799-2x.png);"></span></label>
+	<label><input type="checkbox" id="801" value="801" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/801-2x.png);"></span></label>
+	<label><input type="checkbox" id="803" value="803" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/803-2x.png);"></span></label>
+	<label><input type="checkbox" id="805" value="805" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/805-2x.png);"></span></label>
+	<label><input type="checkbox" id="807" value="807" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/807-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>英雄神</h2>
+	<label><input type="checkbox" id="1065" value="1065" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1065-2x.png);"></span></label>
+	<label><input type="checkbox" id="1067" value="1067" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1067-2x.png);"></span></label>
+	<label><input type="checkbox" id="1069" value="1069" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1069-2x.png);"></span></label>
+	<label><input type="checkbox" id="1071" value="1071" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1071-2x.png);"></span></label>
+	<label><input type="checkbox" id="1073" value="1073" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1073-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>三国神</h2>
+	<label><input type="checkbox" id="1231" value="1231" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1231-2x.png);"></span></label>
+	<label><input type="checkbox" id="1233" value="1233" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1233-2x.png);"></span></label>
+	<label><input type="checkbox" id="1235" value="1235" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1235-2x.png);"></span></label>
+	<label><input type="checkbox" id="1237" value="1237" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1237-2x.png);"></span></label>
+	<label><input type="checkbox" id="1239" value="1239" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1239-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>新東洋神</h2>
+	<label><input type="checkbox" id="1330" value="1330" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1330-2x.png);"></span></label>
+	<label><input type="checkbox" id="1332" value="1332" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1332-2x.png);"></span></label>
+	<label><input type="checkbox" id="1334" value="1334" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1334-2x.png);"></span></label>
+	<label><input type="checkbox" id="1336" value="1336" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1336-2x.png);"></span></label>
+	<label><input type="checkbox" id="1338" value="1338" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1338-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>鎧騎士</h2>
+	<label><input type="checkbox" id="1649" value="1649" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1649-2x.png);"></span></label>
+	<label><input type="checkbox" id="1651" value="1651" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1651-2x.png);"></span></label>
+	<label><input type="checkbox" id="1653" value="1653" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1653-2x.png);"></span></label>
+	<label><input type="checkbox" id="1655" value="1655" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1655-2x.png);"></span></label>
+	<label><input type="checkbox" id="1657" value="1657" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1657-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>新エジプト</h2>
+	<label><input type="checkbox" id="1659" value="1659" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1659-2x.png);"></span></label>
+	<label><input type="checkbox" id="1661" value="1661" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1661-2x.png);"></span></label>
+	<label><input type="checkbox" id="1663" value="1663" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1663-2x.png);"></span></label>
+	<label><input type="checkbox" id="1665" value="1665" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1665-2x.png);"></span></label>
+	<label><input type="checkbox" id="1667" value="1667" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1667-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>新天使</h2>
+	<label><input type="checkbox" id="1826" value="1826" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1826-2x.png);"></span></label>
+	<label><input type="checkbox" id="1828" value="1828" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1828-2x.png);"></span></label>
+	<label><input type="checkbox" id="1830" value="1830" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1830-2x.png);"></span></label>
+	<label><input type="checkbox" id="1832" value="1832" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1832-2x.png);"></span></label>
+	<label><input type="checkbox" id="1834" value="1834" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1834-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>勇士</h2>
+	<label><input type="checkbox" id="1881" value="1881" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1881-2x.png);"></span></label>
+	<label><input type="checkbox" id="1882" value="1882" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1882-2x.png);"></span></label>
+	<label><input type="checkbox" id="1883" value="1883" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1883-2x.png);"></span></label>
+	<label><input type="checkbox" id="1884" value="1884" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1884-2x.png);"></span></label>
+	<label><input type="checkbox" id="1885" value="1885" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1885-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>新ライダー</h2>
+	<label><input type="checkbox" id="2093" value="2093" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2093-2x.png);"></span></label>
+	<label><input type="checkbox" id="2095" value="2095" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2095-2x.png);"></span></label>
+	<label><input type="checkbox" id="2097" value="2097" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2097-2x.png);"></span></label>
+	<label><input type="checkbox" id="2099" value="2099" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2099-2x.png);"></span></label>
+	<label><input type="checkbox" id="2101" value="2101" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2101-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>機導龍</h2>
+	<label><input type="checkbox" id="2185" value="2185" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2185-2x.png);"></span></label>
+	<label><input type="checkbox" id="2186" value="2186" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2186-2x.png);"></span></label>
+	<label><input type="checkbox" id="2187" value="2187" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2187-2x.png);"></span></label>
+	<label><input type="checkbox" id="2188" value="2188" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2188-2x.png);"></span></label>
+	<label><input type="checkbox" id="2189" value="2189" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2189-2x.png);"></span></label>
+	</div>
+	<div class="group1">
+	<h2>機導獣</h2>
+	<label><input type="checkbox" id="2190" value="2190" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2190-2x.png);"></span></label>
+	<label><input type="checkbox" id="2191" value="2191" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2191-2x.png);"></span></label>
+	<label><input type="checkbox" id="2192" value="2192" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2192-2x.png);"></span></label>
+	<label><input type="checkbox" id="2193" value="2193" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2193-2x.png);"></span></label>
+	<label><input type="checkbox" id="2194" value="2194" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2194-2x.png);"></span></label>
+	</div>
+	<div class="group2">
+	<h2 style="position:absolute;">色ヴァル</h2>
+	<div style="margin-left:5.25em;">
+		<div class="group1">
+		<label><input type="checkbox" id="1270" value="1270" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1270-2x.png);"></span></label>
+		<label><input type="checkbox" id="972" value="972" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/972-2x.png);"></span></label>
+		<label><input type="checkbox" id="1516" value="1516" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1516-2x.png);"></span></label>
+		<label><input type="checkbox" id="982" value="982" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/982-2x.png);"></span></label>
+		
+		</div>
+	</div>
+	</div>
+	<div class="group2">
+	<h2 style="position:absolute;">Z</h2>
+	<div style="margin-left:5.25em;">
+		<div class="group1">
+		<label><input type="checkbox" id="1131" value="1131" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1131-2x.png);"></span></label>
+		<label><input type="checkbox" id="1355" value="1355" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1355-2x.png);"></span></label>
+		<label><input type="checkbox" id="1357" value="1357" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1357-2x.png);"></span></label>
+		</div>
+	</div>
+	</div>
+	<div class="group2">
+	<h2 style="position:absolute;">マジシャン</h2>
+	<div style="margin-left:5.25em;">
+		<div class="group1">
+		<label><input type="checkbox" id="1614" value="1614" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1614-2x.png);"></span></label>
+		<label><input type="checkbox" id="1616" value="1616" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1616-2x.png);"></span></label>
+		<label><input type="checkbox" id="1618" value="1618" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1618-2x.png);"></span></label>
+		<label><input type="checkbox" id="1620" value="1620" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1620-2x.png);"></span></label>
+		<label><input type="checkbox" id="1622" value="1622" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1622-2x.png);"></span></label>
+		<label><input type="checkbox" id="1704" value="1704" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1704-2x.png);"></span></label>
+		<label><input type="checkbox" id="1624" value="1624" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1624-2x.png);"></span></label>
+		<label><input type="checkbox" id="1706" value="1706" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1706-2x.png);"></span></label>
+		<label><input type="checkbox" id="1626" value="1626" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1626-2x.png);"></span></label>
+		</div>
+	</div>
+	</div>
+	<div class="group2">
+	<h2 style="position:absolute;">魔導書</h2>
+	<div style="margin-left:5.25em;">
+		<div class="group1">
+		<label><input type="checkbox" id="1755" value="1755" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1755-2x.png);"></span></label>
+		<label><input type="checkbox" id="1757" value="1757" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1757-2x.png);"></span></label>
+		</div>
+	</div>
+	</div>
+	<div class="group2">
+	<h2 style="position:absolute;">フェス限</h2>
+	<div style="margin-left:5.25em;">
+		<div class="group1">
+		<label><input type="checkbox" id="362" value="362" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/362-2x.png);"></span></label>
+		<label><input type="checkbox" id="364" value="364" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/364-2x.png);"></span></label>
+		<label><input type="checkbox" id="1107" value="1107" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1107-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="640" value="640" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/640-2x.png);"></span></label>
+		<label><input type="checkbox" id="642" value="642" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/642-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="911" value="911" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/911-2x.png);"></span></label>
+		<label><input type="checkbox" id="913" value="913" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/913-2x.png);"></span></label>
+		<label><input type="checkbox" id="1088" value="1088" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1088-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="1585" value="1585" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1585-2x.png);"></span></label>
+		<label><input type="checkbox" id="1587" value="1587" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1587-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="1669" value="1669" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1669-2x.png);"></span></label>
+		<label><input type="checkbox" id="1671" value="1671" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1671-2x.png);"></span></label>
+		<label><input type="checkbox" id="1673" value="1673" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1673-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="1946" value="1946" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1946-2x.png);"></span></label>
+		<label><input type="checkbox" id="1948" value="1948" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1948-2x.png);"></span></label>
+		<label><input type="checkbox" id="1950" value="1950" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1950-2x.png);"></span></label>
+		<label><input type="checkbox" id="1952" value="1952" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1952-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="2141" value="2141" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2141-2x.png);"></span></label>
+		<label><input type="checkbox" id="2143" value="2143" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2143-2x.png);"></span></label>
+		<label><input type="checkbox" id="2145" value="2145" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2145-2x.png);"></span></label>
+		<label><input type="checkbox" id="2147" value="2147" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2147-2x.png);"></span></label>
+		<label><input type="checkbox" id="2149" value="2149" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2149-2x.png);"></span></label>
+		</div>
+	</div>
+	</div>
+	<div class="group2">
+	<h2 style="position:absolute;">元フェス限</h2>
+	<div style="margin-left:5.25em;">
+		<div class="group1">
+		<label><input type="checkbox" id="1241" value="1241" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1241-2x.png);"></span></label>
+		<label><input type="checkbox" id="1243" value="1243" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1243-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="1372" value="1372" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1372-2x.png);"></span></label>
+		<label><input type="checkbox" id="1374" value="1374" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1374-2x.png);"></span></label>
+		</div>
+		<div class="group1">
+		<label><input type="checkbox" id="1359" value="1359" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/1359-2x.png);"></span></label>
+		</div>
+	</div>
+	</div>
+
+
+</div>
+</div>
+</form>
+
+<p>
+<span id="maker-kekka2">所有率<em>0</em>％です。（0/0）</span>
+</p>
+
+<p>
+<span style="font-size:x-small;color:#666;">
+<s>IEのURL文字数制限（2048）に達しそうなので、<a href="http://pad.rtwiki.net/index.php?Tips%2F%A5%B4%A5%C3%A5%C9%A5%D5%A5%A7%A5%B9">ゴットフェスのシリーズ定義</a> + ライダー・忍者となっています。</s><br>
+(2015/06/15)レア度5以上の全ガチャ限モンスターを追加しました。
+</span>
+</p>
+
+
+<ul class="kinou">
+<li><span class="btn" id="maker-url1">ブックマーク用URL</span> <span style="font-size:x-small;color:#666;">開いた後のページをブックマークすると、チェック状態を保持できます。</span></li>
+<li><span class="btn" id="maker-twitter1">Twitterに投稿</span> <span style="font-size:x-small;color:#666;">ツイート用の画面を表示します。<a href="http://realtime.search.yahoo.co.jp/search?p=%E3%83%AC%E3%82%A2%E3%82%AC%E3%83%81%E3%83%A3+%23rtwiki_net&ei=UTF-8">ツイートを検索</a></span></li>
+</ul>
+
+
+<p>
+不具合などありましたら、<a href="http://nemusg.com/archives/clear.html">ブログ記事</a>にご連絡ください。
+</p>
+
+<div id="ads">
+<!-- 汎用 -->
+<ins class="adsbygoogle ads_bottom"
+     style="display:block"
+     data-ad-client="ca-pub-1121071461261545"
+     data-ad-slot="1727061917"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="socialBox cfx" style="width:auto;">
+	<div class="Facebook"><div class="fb-like" data-href="http://pad.rtwiki.net/tool/raregacha.html" data-width="98" data-height="20" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div></div>
+	<div class="Tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-text="レアガチャ限所有率 - パズドラW攻略Wiki" data-url="http://pad.rtwiki.net/tool/raregacha.html" data-lang="ja"></a></div>
+	<div class="hatena"><a href="http://b.hatena.ne.jp/entry/http://pad.rtwiki.net/tool/raregacha.html" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+	<div class="Google"><div class="g-plusone" data-size="medium" data-href="http://pad.rtwiki.net/tool/raregacha.html"></div></div>
+	<div class="LINE"><span><script type="text/javascript" src="http://media.line.naver.jp/js/line-button.js?v=20130508"></script></span><script type="text/javascript">new jp.naver.line.media.LineButton({"pc":false,"lang":"ja","type":"a"});</script></div>
+	</div>
+	<!-- Twitter JS -->
+	<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<!-- Google+1 JS -->
+	<script type="text/javascript">
+	  window.___gcfg = {lang: 'ja'};
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+</div><!-- /.panelInner -->
+</div><!-- /.panel -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="raregacha.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29385079-1']);
+  _gaq.push(['_setCustomVar', 1, 'setskin', 'pc', 3]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{width:auto;}
+.yokoLink{margin:0 0 10px 20px;font-size:11px;}
+.yokoLink li{float:left;margin:0 15px 0 0;list-style:none;}
+.yokoLink li .active{font-weight:bold;}
+
+h1.title{font-size:20px;}
+.smtSkin div#header{margin-bottom:20px;}
+.panel{margin:5px 10px;}
+
+.allCheck{margin-bottom:5px;}
+.monsImg{float:left;display:inline-block;width:32px;height:32px;background:url(http://pad.rtwiki.net/image/pad/mons/000-2x.png) no-repeat;background-size:32px auto;}
+
+.maker h2{display:inline-block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;background:none;border-left:10px solid #aaccff;border-radius:0;}
+.maker label{display:inline-block;padding:5px;cursor:pointer;border:1px solid #eee;border-radius:2px;}
+.maker label.checked{background:#fec2b1;border:1px solid #dd4500;}
+.maker input{display:none;}
+#maker-kekka1 em{font-size:30px;font-style:normal;}
+#maker-kekka2 em{font-size:30px;font-style:normal;}
+#ads {margin:20px 0px;}
+.group1{display:inline-block;background:#fff;margin:0;padding:5px;}
+.group2{margin:0;padding:5px;}
+
+.kinou{margin:5px 0 0;padding:0;}
+.kinou li{list-style:none;margin:0 0 5px;}
+.kinou li .btn{display:inline-block;padding:4px;background:#eee;border:1px solid #bbb;border-radius:4px;}
+
+.style_table{border-collapse:separate;border-spacing:1px;}
+.ads_top{width:320px;height:100px;margin:0 auto;}
+.ads_bottom{width:auto;height:auto;margin:0 auto;}
+
+	@media all and (max-width: 350px) {
+		#.maker h2{display:block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;}
+		.ads_top{margin:0 -10px;}
+	}
+
+	@media all and (min-width: 480px) {
+		.maker img{width:48px;height:48px;}
+		.monsImg{float:left;display:inline-block;width:48px;height:48px;background:url(http://pad.rtwiki.net/image/pad/mons/000-2x.png) no-repeat;background-size:48px auto;}
+		div#header{max-width:950px;min-width:320px;margin:10px auto;}
+		.panel{max-width:970px;min-width:320px;margin:10px auto;}
+		.panelInner{margin:0 10px;padding:10px;border:3px solid #eee;border-radius:4px;}
+		.maker input{/*-webkit-appearance:none;-moz-appearance:none;appearance:none;*/}
+	}
+
+	@media all and (min-width: 800px) {
+		.ads_top{width:728px;height:90px;}
+		.ads_bottom{width:728px;height:90px;}
+	}
+
