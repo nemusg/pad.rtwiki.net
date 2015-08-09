@@ -1,4 +1,8 @@
 
+var el = document.querySelector('#checklist');
+var text = el.dataset.text;
+var file = el.dataset.file;
+
 $(function(){
 
 // パラメータの値を取得し、処理を分岐
@@ -80,6 +84,7 @@ function maker1(){
 	var checkRate = Math.floor(checkLength / checkLengthAll *100);
 
 	$('#maker-kekka1').html('所有率<em>' + checkRate + '</em>％です。（' + checkLength + '/' + checkLengthAll + '）');
+	$('#maker-kekka2').html('所有率<em>' + checkRate + '</em>％です。（' + checkLength + '/' + checkLengthAll + '）');
 	//$(':text[name="maker-kekka1a"]').val(checkLengthAll + '個中' + checkLength + '個。所有率' + checkRate + '％です。 #rtwiki');
 
 	if ( checkLength != 0) {
@@ -89,7 +94,7 @@ function maker1(){
 	}
 
 	if ( checkLength != 0) {
-	$('#maker-twitter1').html('<a href="https://twitter.com/intent/tweet?source=webclient&text=%e7%a7%81%e3%81%ae%e9%99%8d%e8%87%a8%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e6%89%80%e6%9c%89%e7%8e%87%e3%81%af%20' + checkRate + '%ef%bc%85%e3%81%a7%e3%81%99%20http://pad.rtwiki.net/tool/clear.html?' + valListShare + '=1%20%23rtwiki_net%20%23pzdr" target="_blank">Twitterに投稿</a>');
+	$('#maker-twitter1').html('<a href="https://twitter.com/intent/tweet?source=webclient&text=' + text + checkRate + '%ef%bc%85%e3%81%a7%e3%81%99%20http://pad.rtwiki.net/tool/' + file + '?' + valListShare + '=1%20%23rtwiki_net%20%23pzdr" target="_blank">Twitterに投稿</a>');
 	}else{
 	$('#maker-twitter1').html('Twitterに投稿');
 	}
