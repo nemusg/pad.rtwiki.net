@@ -35,7 +35,7 @@ h1.title{font-size:20px;}
 .ads_top{width:320px;height:100px;margin:0 auto;}
 .ads_bottom{width:auto;height:auto;margin:0 auto;}
 
-.twitterTL{margin:0 auto;width:300px;}
+.twitterTL{margin:0 auto 10px;width:300px;}
 
 	@media all and (max-width: 350px) {
 		.maker h2{display:block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;}
