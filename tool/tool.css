@@ -8,7 +8,14 @@ h1.title{font-size:20px;}
 .panel{margin:5px 10px;}
 
 .allCheck{margin-bottom:5px;}
-.monsImg{float:left;display:inline-block;width:32px;height:32px;background:url(http://pad.rtwiki.net/image/pad/mons/000-2x.png) no-repeat;background-size:32px auto;}
+.monsImg{
+	float:left;
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background:url(http://pad.rtwiki.net/image/spacer.gif) no-repeat;
+	background-size:32px auto;
+	}
 
 .maker h2{display:inline-block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;background:none;border-left:10px solid #aaccff;border-radius:0;}
 .maker label{display:inline-block;padding:5px;cursor:pointer;border:1px solid #eee;border-radius:2px;}
@@ -28,6 +35,8 @@ h1.title{font-size:20px;}
 .ads_top{width:320px;height:100px;margin:0 auto;}
 .ads_bottom{width:auto;height:auto;margin:0 auto;}
 
+.twitterTL{margin:0 auto;width:300px;}
+
 	@media all and (max-width: 350px) {
 		.maker h2{display:block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;}
 		.ads_top{margin:0 -10px;}
@@ -35,7 +44,11 @@ h1.title{font-size:20px;}
 
 	@media all and (min-width: 480px) {
 		.maker img{width:48px;height:48px;}
-		.monsImg{float:left;display:inline-block;width:48px;height:48px;background:url(http://pad.rtwiki.net/image/pad/mons/000-2x.png) no-repeat;background-size:48px auto;}
+		.monsImg{
+			width:48px;
+			height:48px;
+			background-size:48px;
+			}
 		div#header{max-width:950px;min-width:320px;margin:10px auto;}
 		.panel{max-width:970px;min-width:320px;margin:10px auto;}
 		.panelInner{margin:0 10px;padding:10px;border:3px solid #eee;border-radius:4px;}

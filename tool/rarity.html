@@ -75,10 +75,10 @@
 	<div onclick="maker1();">
 		<div class="group">
 			<h2>モンスター購入</h2>
-			<label><input type="checkbox" id="2253" value="2253" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2253-2x.png);"></span></label>
-			<label><input type="checkbox" id="2255" value="2255" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2255-2x.png);"></span></label>
-			<label><input type="checkbox" id="2257" value="2257" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2257-2x.png);"></span></label>
-			<label><input type="checkbox" id="2259" value="2259" class="cfx"><span class="monsImg" style="background-image:url(http://pad.rtwiki.net/image/pad/mons/2259-2x.png);"></span></label>
+			<label><input type="checkbox" id="2253" value="2253" class="cfx"><span class="monsImg" data-original="http://pad.rtwiki.net/image/pad/mons/2253-2x.png"></span></label>
+			<label><input type="checkbox" id="2255" value="2255" class="cfx"><span class="monsImg" data-original="http://pad.rtwiki.net/image/pad/mons/2255-2x.png"></span></label>
+			<label><input type="checkbox" id="2257" value="2257" class="cfx"><span class="monsImg" data-original="http://pad.rtwiki.net/image/pad/mons/2257-2x.png"></span></label>
+			<label><input type="checkbox" id="2259" value="2259" class="cfx"><span class="monsImg" data-original="http://pad.rtwiki.net/image/pad/mons/2259-2x.png"></span></label>
 		</div>
 	</div>
 </div>
@@ -123,10 +123,24 @@
 </div><!-- /.panelInner -->
 </div><!-- /.panel -->
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="checklist.js?150829" id="checklist" data-file="rarity.html" data-text="%e7%a7%81%e3%81%ae%e3%83%ac%e3%82%a2%e5%ba%a69%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e6%89%80%e6%9c%89%e7%8e%87%e3%81%af"></script>
+<div class="twitterTL">
+<a class="twitter-timeline" width="300" height="500" href="https://twitter.com/hashtag/rtwiki_net" data-widget-id="637674435198124032" data-chrome="noheader nofooter">#rtwiki_net のツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
 
-<script src="../skin/snsCount.js?150804" id="snsCount" data-url="http://pad.rtwiki.net/tool/rarity.html"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="checklist.js?150830" id="checklist" data-file="rarity.html" data-text="%e7%a7%81%e3%81%ae%e3%83%ac%e3%82%a2%e5%ba%a69%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e6%89%80%e6%9c%89%e7%8e%87%e3%81%af"></script>
+
+<script src="../skin/snsCount.js?150830" id="snsCount" data-url="http://pad.rtwiki.net/tool/rarity.html"></script>
+
+<script type="text/javascript" src="jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".monsImg").lazyload({
+		effect : "fadeIn"
+	});
+});
+</script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
