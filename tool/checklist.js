@@ -88,14 +88,14 @@ function maker1(){
 	//$(':text[name="maker-kekka1a"]').val(checkLengthAll + '個中' + checkLength + '個。所有率' + checkRate + '％です。 #rtwiki');
 
 	if ( checkLength != 0) {
-	$('#maker-url1').html('<a href="?' + valListShare + '=1">ブックマーク用URL</a>');
+	$('#maker-url1').html('<a href="?' + valListShare + '=1">ブックマーク用リンク</a>');
 	}else{
-	$('#maker-url1').html('<a href="?' + valListShare + '">ブックマーク用URL</a>');
+	$('#maker-url1').html('<a href="?' + valListShare + '">ブックマーク用リンク</a>');
 	}
 
 	if ( checkLength != 0) {
-	$('#maker-twitter1').html('<a href="https://twitter.com/intent/tweet?source=webclient&text=' + text + checkRate + '%ef%bc%85%e3%81%a7%e3%81%99%20http://pad.rtwiki.net/tool/' + file + '?' + valListShare + '=1%20%23rtwiki_net%20%23pzdr" target="_blank">Twitterに投稿</a>');
+	$('#maker-twitter1').html('<a href="https://twitter.com/intent/tweet?source=webclient&text=' + text + checkRate + '%ef%bc%85%e3%81%a7%e3%81%99%20http://pad.rtwiki.net/tool/' + file + '?' + valListShare + '=1%20%23rtwiki_net%20%23pzdr" target="_blank">結果をツイート</a>');
 	}else{
-	$('#maker-twitter1').html('<a href="https://twitter.com/intent/tweet?source=webclient&text=' + text + checkRate + '%ef%bc%85%e3%81%a7%e3%81%99%20http://pad.rtwiki.net/tool/' + file + valListShare + '%20%23rtwiki_net%20%23pzdr" target="_blank">Twitterに投稿</a>');
+	$('#maker-twitter1').html('<a href="https://twitter.com/intent/tweet?source=webclient&text=' + text + checkRate + '%ef%bc%85%e3%81%a7%e3%81%99%20http://pad.rtwiki.net/tool/' + file + valListShare + '%20%23rtwiki_net%20%23pzdr" target="_blank">結果をツイート</a>');
 	}
 }
