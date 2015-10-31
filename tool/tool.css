@@ -20,9 +20,10 @@ h1.title{font-size:20px;}
 	background-size:32px auto;
 	}
 
-.maker h2{display:inline-block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;background:none;border-left:10px solid #aaccff;border-radius:0;}
+.maker h2{display:inline-block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;background:none;border-left:6px solid #aaccff;border-radius:0;}
 .maker label{display:inline-block;padding:2px;cursor:pointer;border:1px solid #eee;border-radius:2px;opacity:0.5;}
 .maker label.checked{background:#fec2b1;border:1px solid #dd4500;opacity:1;}
+.allCheck label{padding:4px;opacity:1;border:1px solid #ccc;background:#eee;}
 .maker input{display:none;}
 #maker-kekka1 em{font-size:30px;font-style:normal;}
 #maker-kekka2 em{font-size:30px;font-style:normal;}
