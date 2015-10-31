@@ -21,19 +21,26 @@ h1.title{font-size:20px;}
 	}
 
 .maker h2{display:inline-block;width:5em;font-size:11px;font-weight:normal;vertical-align:top;background:none;border-left:10px solid #aaccff;border-radius:0;}
-.maker label{display:inline-block;padding:5px;cursor:pointer;border:1px solid #eee;border-radius:2px;}
-.maker label.checked{background:#fec2b1;border:1px solid #dd4500;}
+.maker label{display:inline-block;padding:2px;cursor:pointer;border:1px solid #eee;border-radius:2px;opacity:0.5;}
+.maker label.checked{background:#fec2b1;border:1px solid #dd4500;opacity:1;}
 .maker input{display:none;}
 #maker-kekka1 em{font-size:30px;font-style:normal;}
 #maker-kekka2 em{font-size:30px;font-style:normal;}
 #ads1 {margin:0 auto 15px;}
 #ads2 {margin:15px 0;}
 #ads {margin:20px 0px;}
-.group{border:0;display:block;}
+.group{border:0;display:block;padding:5px 5px 0;}
 .maker .group h2{display:block;width:auto;}
-.group1{display:inline-block;background:#fff;margin:0;padding:5px;}
+.group1{display:inline-block;background:#fff;margin:0;padding:0 5px;}
+.group1:first-child{padding-top:5px;}
 .group1.groupBr{display:block;}
-.group2{margin:0;padding:5px;}
+.group2{margin:0;padding:0 5px;}
+
+/* font-size */
+.group,
+.group1,
+.group2{font-size:5px;}
+
 .kinou{margin:5px 0 0;padding:0;}
 .kinou li{list-style:none;margin:0 0 5px;}
 .kinou li .btn{display:inline-block;padding:4px;background:#eee;border:1px solid #bbb;border-radius:4px;}
