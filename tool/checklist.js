@@ -7,19 +7,12 @@ $(function(){
 
 // パラメータの値を取得し、処理を分岐
 
-if ( getUrlVars() != window.location.href) {
-	//console.log("パラメータがなにかあるよ");
-	for (var i = 1; i < 5000; i++ ) {
-		//console.log([i]);
-		if ( getUrlVars()[[i]] == "1") {
-		    //console.log("パラメータが" + i + "=1でしたよ");
-		    $('input[id="' + i +'"]').prop('checked', true);
-		} else {
-		    //console.log("パラメータが" + i + "=1じゃなかったよ");
-		    $('input[id="' + i +'"]').prop('checked', false);
-		}
-
-	}
+var urlVars = getUrlVars();
+//console.log(urlVars);
+if (urlVars[0] !== window.location.href) {
+    for (var i = 0; i < urlVars.length; i++ ) {
+        $('input[id="' + parseInt(urlVars[i], 10) +'"]').prop('checked', true);//本当は10→36にしたい
+    }
 }
 
 // 一回だけ実行
@@ -30,15 +23,7 @@ maker1();
 
 function getUrlVars()
 {
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split(',');
-    for(var i = 0; i <hashes.length; i++)
-    {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
-    }
-    return vars;
+    return window.location.href.slice(window.location.href.indexOf('?') + 1).split(',');
 }
 
 $('.allCheck input,.allCheck label').click(function(){ //全選択・全解除をクリックしたとき
@@ -75,7 +60,7 @@ function maker1(){
 	var $checked = $('#my-form label input:checked');
 	var valList = $checked.map(function(index, el) { return $(this).val(); });
 	//console.log(valList);  // => ["B", "C"]
-	var valListShare = $checked.map(function(index, el) { return $(this).val(); }) .get().join("=1,");
+	var valListShare = $checked.map(function(index, el) { return parseInt($(this).val()).toString(10); }) .get().join(",");//本当は10→36にしたい
 	//console.log(valListShare);  // => ["B", "C"]
 
 	// チェックボックスの数を取得する
@@ -88,7 +73,7 @@ function maker1(){
 	//$(':text[name="maker-kekka1a"]').val(checkLengthAll + '個中' + checkLength + '個。所有率' + checkRate + '％です。 #rtwiki');
 
 	if ( checkLength != 0) {
-	$('#maker-url1').html('<a href="?' + valListShare + '=1">ブックマーク用リンク</a>');
+	$('#maker-url1').html('<a href="?' + valListShare + '">ブックマーク用リンク</a>');
 	}else{
 	$('#maker-url1').html('<a href="?' + valListShare + '">ブックマーク用リンク</a>');
 	}
