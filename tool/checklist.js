@@ -21,7 +21,7 @@ function getUrlVars()
     return window.location.href.slice(window.location.href.indexOf('?') + 1).split(',');
 }
 
-$('.allCheck input,.allCheck label').click(function(){ //全選択・全解除をクリックしたとき
+$('.allCheck input,.allCheck label').on('click',function(){ //全選択・全解除をクリックしたとき
     var items = $(this).closest('.allCheck').next().find('input');
     if($(this).is(':checked')) { //全選択・全解除がcheckedだったら
         $(items).prop('checked', true); //アイテムを全部checkedにする
@@ -41,7 +41,7 @@ function checked(){
         // 最初の処理
         $(this).find(":checked").closest("label").addClass("checked");
         // ラベルクリック
-        label.click(function() {
+        label.on('click',function() {
             label.filter(".checked").removeClass("checked");
             label.find(":checked").closest(label).addClass("checked");
         });
