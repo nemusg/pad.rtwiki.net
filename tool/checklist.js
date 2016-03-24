@@ -1,8 +1,3 @@
-
-var el = document.querySelector('#checklist');
-var text = el.dataset.text;
-var file = el.dataset.file;
-
 $(function(){
 
 // パラメータの値を取得し、処理を分岐
@@ -55,6 +50,10 @@ function checked(){
 
 /* Maker */
 function maker1(){
+
+	var el = document.querySelector('#checklist');
+	var text = el.dataset.text;
+	var file = el.dataset.file;
 
 	// チェックボックスの値を取得する
 	var $checked = $('#my-form label input:checked');
