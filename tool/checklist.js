@@ -1,5 +1,8 @@
 $(function(){
 
+	//このclass名がクリックされたら動く
+	$(".checklist-js").on('click', maker1);
+
 	var el = document.querySelector('#checklist');
 	var text = el.dataset.text;
 	var file = el.dataset.file;
