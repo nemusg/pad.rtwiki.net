@@ -1,0 +1,81 @@
+body { width: auto; margin: 0; background-color: white; color: #333333; font-family: verdana,arial,helvetica,sans-serif; font-size: 90%; }
+body .cfx { *zoom: 1; *min-height: 0; }
+body .cfx:after { content: ""; display: block; clear: both; }
+body a { background-color: inherit; text-decoration: none; }
+body a:link { color: #215dc6; }
+body a:visited { color: #0022bb; }
+#header body a:visited { color: #215dc6; }
+body a:hover { background-color: #ccddee; text-decoration: underline; }
+body ul { margin: 0.5em 0; padding: 0 0 0 4px; line-height: 130%; }
+body h1 { font-weight: bold; margin: 12px 0 0; padding: 6px 0 0; font-size: 18px; line-height: 22px; margin-top: 4px; }
+body h2 { margin: 0 0 0.5em; padding: 0.3em 0.5em; }
+body .undertone { font-size: 10px; color: #666; }
+body #ads1 { margin: 0 auto 15px; }
+body #ads2 { margin: 15px 0; }
+body #ads3 { margin: 0 auto 15px; clear: both; }
+body .ads_top { width: 320px; height: 100px; margin: 0 auto; }
+body .ads_bottom { width: auto; height: auto; margin: 0 auto; }
+@media all and (max-width: 350px) { body .ads_top { margin: 0 -10px; } }
+@media all and (min-width: 800px) { body .ads_top { width: 728px; height: 90px; }
+  body .ads_bottom { width: 728px; height: 90px; } }
+@media all and (min-width: 950px) { body #ads1 { width: 950px; margin: 0 auto 20px; } }
+body #header { margin: 0 10px 20px; }
+@media all and (min-width: 480px) { body #header { max-width: 950px; min-width: 320px; /*margin:10px auto;*/ } }
+body #header .logo { background: transparent url("http://pad.rtwiki.net/image/pad/icon_088.png") no-repeat scroll 0 0; display: block; float: left; height: 49px; margin: 6px 16px 10px 0; overflow: hidden; padding: 0; text-indent: -9999px; width: 49px; }
+body #header .topicpath { font-size: 12px; }
+@media all and (min-width: 950px) { body .wrapper { width: 950px; margin: 0 auto 20px; } }
+body .panel { margin: 5px 10px; }
+@media all and (min-width: 480px) { body .panel { max-width: 630px; min-width: 320px; margin: 10px auto 20px; } }
+@media all and (min-width: 950px) { body .panel { float: left; width: 630px; } }
+body .panel .yokoLink { margin: 0; font-size: 11px; }
+@media all and (min-width: 480px) { body .panel .yokoLink { margin-left: 15px; } }
+body .panel .yokoLink li { float: left; margin: 0 6px 10px 0; list-style: none; }
+body .panel .yokoLink li a { background: #3097b5; color: #fff; padding: 3px 6px; border-radius: 10px; }
+body .panel .yokoLink li.active a { background: #5bb75b; font-weight: bold; }
+body .panel .yokoLink li.active a:link, body .panel .yokoLink li.active a:visited { color: #fff; }
+@media all and (min-width: 480px) { body .panelInner { margin: 0 10px; padding: 10px; border: 3px solid #eee; border-radius: 4px; } }
+body .panelInner .monsImg { float: left; display: inline-block; width: 32px; height: 32px; background: url(http://pad.rtwiki.net/image/spacer.gif) no-repeat; background-size: 32px auto; }
+body .panelInner .maker .allCheck { margin-bottom: 5px; }
+body .panelInner .maker .allCheck label { padding: 4px; opacity: 1; border: 1px solid #ccc; background: #eee; }
+body .panelInner .maker h2 { display: inline-block; width: 5em; font-size: 11px; font-weight: normal; vertical-align: top; background: none; border-left: 6px solid #aaccff; border-radius: 0; }
+@media all and (max-width: 350px) { body .panelInner .maker h2 { display: block; width: 5em; font-size: 11px; font-weight: normal; vertical-align: top; } }
+body .panelInner .maker label { display: inline-block; padding: 2px; cursor: pointer; border: 1px solid #eee; border-radius: 2px; opacity: 0.5; }
+body .panelInner .maker label.checked { background: #fec2b1; border: 1px solid #dd4500; opacity: 1; }
+body .panelInner .maker input { display: none; }
+body .panelInner .maker .group { border: 0; display: block; padding: 5px 5px 0; font-size: 5px; }
+body .panelInner .maker .group h2 { display: block; width: auto; }
+body .panelInner .maker .group1 { display: inline-block; background: #fff; margin: 0; padding: 0 6px 0 0; font-size: 5px; }
+body .panelInner .maker .group1:first-child { padding-top: 5px; }
+body .panelInner .maker .group1.groupBr { display: block; }
+body .panelInner .maker .group2 { margin: 0; padding: 0 5px; font-size: 5px; }
+body .panelInner #maker-kekka1 em, body .panelInner #maker-kekka2 em { font-size: 30px; font-style: normal; }
+body .socialColumn { margin: 0 10px; }
+@media all and (min-width: 480px) { body .socialColumn { margin: 0 20px 20px; } }
+@media all and (min-width: 950px) { body .socialColumn { margin: 2em 0 0; max-width: 320px; float: left; } }
+body .socialColumn .kinou { margin: 5px 0 0; padding: 0; }
+body .socialColumn .kinou li { list-style: none; margin: 0 0 5px; }
+body .socialColumn .kinou li .btn { display: inline-block; padding: 4px; background: #eee; border: 1px solid #bbb; border-radius: 4px; }
+body .socialColumn .kinou li .btn a:hover { background: none; }
+body .socialColumn .kinou li #maker-twitter1.btn { background: #5bb75b; border-color: green; }
+body .socialColumn .kinou li #maker-twitter1.btn a { color: #fff; }
+body .socialColumn .twitterTL { width: 300px; margin: 15px auto 10px; border: 1px solid #e1e8ec; border-width: 0 1px 1px; }
+@media all and (max-width: 350px) { body .socialColumn .twitterTL { margin: 15px auto 10px; } }
+@media all and (min-width: 950px) { body .socialColumn .twitterTL { margin: 15px 0; } }
+body .socialColumn .text { font-size: x-small; color: #666; }
+body .socialColumn .rwd { font-size: x-small; color: #666; text-align: center; }
+body .socialColumn div.socialBox { margin: 0 10px 10px; width: 300px; }
+body .socialColumn div.socialBox ul { display: table-cell; width: 240px; vertical-align: middle; height: 30px; font-size: 1px; }
+body .socialColumn div.socialBox ul li { display: inline-block; margin: 1px 10px 0 0; padding: 0; list-style: none; }
+body .socialColumn div.socialBox ul li span { display: inline-block; font-size: 12px; line-height: 20px; margin-left: 2px; vertical-align: top; color: #444; }
+body .socialColumn div.socialBox ul li a { display: inline-block; width: 20px; height: 20px; text-indent: -9999px; overflow: hidden; font-size: 1rem; letter-spacing: normal; word-spacing: normal; }
+body .socialColumn div.socialBox ul .Facebook a { background: url("http://pad.rtwiki.net/image/social/facebook.png") 0 0 no-repeat; }
+body .socialColumn div.socialBox ul .Twitter a { background: url("http://pad.rtwiki.net/image/social/twitter.png") 0 0 no-repeat; }
+body .socialColumn div.socialBox ul .Hatena a { background: url("http://pad.rtwiki.net/image/social/hatena.png") 0 0 no-repeat; }
+body .socialColumn div.socialBox ul .Line a { background: url("http://pad.rtwiki.net/image/social/line.png") 0 0 no-repeat; }
+body .socialColumn div.socialBox ul .Google a { background: url("http://pad.rtwiki.net/image/social/google.png") 0 0 no-repeat; }
+:root body .socialColumn div.socialBox ul .Facebook a { background: url("http://pad.rtwiki.net/image/social/facebook-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
+:root body .socialColumn div.socialBox ul .Twitter a { background: url("http://pad.rtwiki.net/image/social/twitter-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
+:root body .socialColumn div.socialBox ul .Hatena a { background: url("http://pad.rtwiki.net/image/social/hatena-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
+:root body .socialColumn div.socialBox ul .Line a { background: url("http://pad.rtwiki.net/image/social/line-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
+:root body .socialColumn div.socialBox ul .Google a { background: url("http://pad.rtwiki.net/image/social/google-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
+body .copyright { clear: both; font-size: 10px; margin: 0 10px 10px; line-height: 1.4; }
