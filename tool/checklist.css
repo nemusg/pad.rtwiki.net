@@ -24,6 +24,8 @@ body #header { margin: 0 10px 20px; }
 body #header .logo { background: transparent url("http://pad.rtwiki.net/image/pad/icon_088.png") no-repeat scroll 0 0; display: block; float: left; height: 49px; margin: 6px 16px 10px 0; overflow: hidden; padding: 0; text-indent: -9999px; width: 49px; }
 body #header .topicpath { font-size: 12px; }
 @media all and (min-width: 950px) { body .wrapper { width: 950px; margin: 0 auto 20px; } }
+body .wrapper .notice { text-align: center; }
+body .wrapper .notice span { margin: 0 5px; }
 body .panel { margin: 5px 10px; }
 @media all and (min-width: 480px) { body .panel { max-width: 630px; min-width: 320px; margin: 10px auto 20px; } }
 @media all and (min-width: 950px) { body .panel { float: left; width: 630px; } }

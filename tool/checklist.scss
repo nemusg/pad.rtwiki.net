@@ -93,9 +93,16 @@ body{
 		}
 	}
 
-
-	@media all and (min-width: 950px) {
-		.wrapper{width:950px; margin:0 auto 20px;}
+	.wrapper{
+		@media all and (min-width: 950px) {
+			width:950px; margin:0 auto 20px;
+		}
+		.notice{
+			text-align: center;
+			span{
+				margin: 0 5px;
+			}
+		}
 	}
 	.panel{
 		margin: 5px 10px;
