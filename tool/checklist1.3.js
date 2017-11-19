@@ -14,8 +14,10 @@ $(function(){
 
 	// パラメータの値を取得し、処理を分岐
 	var urlVars = getUrlVars();
-	for (var i = 0; i < urlVars.length; i++ ) {
-		$('input[id="' + parseInt(urlVars[i], 10) +'"]').prop('checked', true);
+	if (urlVars) {
+		for (var i = 0; i < urlVars.length; i++ ) {
+			$('input[id="' + parseInt(urlVars[i], 10) +'"]').prop('checked', true);
+		}
 	}
 
 	// 一回だけ実行
