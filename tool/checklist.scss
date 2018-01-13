@@ -52,6 +52,10 @@ body{
 		font-size:10px;
 		color:#666;
 	}
+	.sharelink{
+		font-size:12px;
+	}
+
 	#ads1 {margin:0 auto 15px;}
 	#ads2 {margin:15px 0;}
 	#ads3 {margin:0 auto 15px;clear:both;}
@@ -60,13 +64,16 @@ body{
 
 	@media all and (max-width: 350px) {
 		.ads_top{margin:0 -10px;}
+		.sharelink{display: inline;}
 	}
 	@media all and (min-width: 800px) {
 		.ads_top{width:728px;height:90px;}
 		.ads_bottom{width:728px;height:90px;}
+		.sharelink{display: inline;}
 	}
 	@media all and (min-width: 950px) {
 		#ads1 {width:950px; margin:0 auto 20px;}
+		.sharelink{display: none;}
 	}
 
 
@@ -78,15 +85,15 @@ body{
 			/*margin:10px auto;*/
 		}
 		.logo{
-			background: rgba(0, 0, 0, 0) url("http://pad.rtwiki.net/image/pad/icon_088.png") no-repeat scroll 0 0;
+			background: rgba(0, 0, 0, 0) url("http://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll 0 0;
 			display: block;
 			float: left;
-			height: 49px;
-			margin: 6px 16px 10px 0;
+			height: 32px;
+			margin: 6px 10px 10px 0;
 			overflow: hidden;
 			padding: 0;
 			text-indent: -9999px;
-			width: 49px;
+			width: 32px;
 		}
 		.topicpath {
 		    font-size: 12px;
@@ -105,7 +112,7 @@ body{
 		}
 	}
 	.panel{
-		margin: 5px 10px;
+		margin: 5px 8px;
 		@media all and (min-width: 480px) {
 			max-width:630px;
 			min-width:320px;
@@ -153,8 +160,10 @@ body{
 			display:inline-block;
 			width:32px;
 			height:32px;
-			background:url(http://pad.rtwiki.net/image/spacer.gif) no-repeat;
+			padding:2px;
+			background:url(img/common/spacer.gif) no-repeat;
 			background-size:32px auto;
+			background-position:2px;
 		}
 		.maker{
 			.allCheck{
@@ -185,7 +194,7 @@ body{
 			}
 			label{
 				display:inline-block;
-				padding:2px;
+				padding:0;
 				cursor:pointer;
 				border:1px solid #eee;
 				border-radius:2px;
@@ -200,8 +209,16 @@ body{
 				display:none;
 			}
 			.group{
-				border:0;display:block;padding:5px 5px 0;font-size:5px;
+				border:0;display:block;padding:5px 0 0;font-size:5px;
 				h2{display:block;width:auto;}
+
+				@media all and (max-width: 320px) {
+					padding:5px 5px 0;
+				}
+				@media all and (min-width: 950px) {
+					padding:5px 5px 0;
+				}
+
 			}
 			.group1{
 				display:inline-block;background:#fff;margin:0;padding:0 6px 0 0;font-size:5px;
@@ -226,18 +243,52 @@ body{
 			max-width: 320px;
 			float:left;
 		}
-		.kinou{
-			margin:5px 0 0;
-			padding:0;
-			li{
-				list-style:none;
-				margin:0 0 5px;
-			.btn{display:inline-block;padding:4px;background:#eee;border:1px solid #bbb;border-radius:4px;}
-			.btn a:hover{background:none;}
-			#maker-twitter1.btn{background:#5bb75b;border-color:green;}
-			#maker-twitter1.btn a{color:#fff;}
+
+		.sharetxt{
+			margin:15px 0 5px;
+
+			p{
+				margin: 5px 0 0;
+				font-size: 12px;
 			}
+			.textarea{
+				border: 1px solid #999;
+				padding: 4px;
+
+				textarea{
+					border: 0;
+					width: 100%;
+					height: 110px;
+					font-size: 16px; //12pxがいいが16px以上ないとiOSでズームしてしまう
+					color: #333;
+					@media all and (min-width: 950px) {
+						height: 70px;
+						font-size: 12px;
+					}
+				}
+
+			}
+			div.socialBox{
+				ul{
+					display:table-cell;width:240px;vertical-align:middle;height:30px;font-size:1px;
+					li{display:inline-block;margin:1px 10px 0 0;padding:0;list-style:none;}
+					li span{display:inline-block;font-size:12px;line-height:20px;margin-left:2px;vertical-align:top;color:#444;}
+					li a{display:inline-block;width:20px;height:20px;text-indent:-9999px;overflow:hidden;font-size:1rem;letter-spacing:normal;word-spacing:normal;}
+					.Facebook a{background: url("img/common/facebook.png") 0 0 no-repeat;}
+					.Twitter a{background: url("img/common/twitter.png") 0 0 no-repeat;}
+					.Hatena a{background: url("img/common/hatena.png") 0 0 no-repeat;}
+					.Line a{background: url("img/common/line.png") 0 0 no-repeat;}
+					.Google a{background: url("img/common/google.png") 0 0 no-repeat;}
+					:root & .Facebook a{background: url("img/common/facebook-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
+					:root & .Twitter a{background: url("img/common/twitter-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
+					:root & .Hatena a{background: url("img/common/hatena-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
+					:root & .Line a{background: url("img/common/line-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
+					:root & .Google a{background: url("img/common/google-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
+				}
+			}
+
 		}
+
 		.twitterTL{
 			width:300px;margin:15px auto 10px;border:1px solid #e1e8ec;border-width:0 1px 1px;
 			@media all and (max-width: 350px) {
@@ -251,25 +302,6 @@ body{
 		.text{font-size:x-small;color:#666;}
 		.rwd{font-size:x-small;color:#666;text-align:center;}
 
-		div.socialBox{
-			margin:0 10px 10px;width:300px;
-			ul{
-				display:table-cell;width:240px;vertical-align:middle;height:30px;font-size:1px;
-				li{display:inline-block;margin:1px 10px 0 0;padding:0;list-style:none;}
-				li span{display:inline-block;font-size:12px;line-height:20px;margin-left:2px;vertical-align:top;color:#444;}
-				li a{display:inline-block;width:20px;height:20px;text-indent:-9999px;overflow:hidden;font-size:1rem;letter-spacing:normal;word-spacing:normal;}
-				.Facebook a{background: url("http://pad.rtwiki.net/image/social/facebook.png") 0 0 no-repeat;}
-				.Twitter a{background: url("http://pad.rtwiki.net/image/social/twitter.png") 0 0 no-repeat;}
-				.Hatena a{background: url("http://pad.rtwiki.net/image/social/hatena.png") 0 0 no-repeat;}
-				.Line a{background: url("http://pad.rtwiki.net/image/social/line.png") 0 0 no-repeat;}
-				.Google a{background: url("http://pad.rtwiki.net/image/social/google.png") 0 0 no-repeat;}
-				:root & .Facebook a{background: url("http://pad.rtwiki.net/image/social/facebook-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
-				:root & .Twitter a{background: url("http://pad.rtwiki.net/image/social/twitter-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
-				:root & .Hatena a{background: url("http://pad.rtwiki.net/image/social/hatena-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
-				:root & .Line a{background: url("http://pad.rtwiki.net/image/social/line-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
-				:root & .Google a{background: url("http://pad.rtwiki.net/image/social/google-2x.png") 0 0 no-repeat;-webkit-background-size:20px auto;background-size:20px auto;}
-			}
-		}
 	
 	}
 	.copyright{
@@ -283,6 +315,108 @@ body{
 }
 
 
+/* Tipso Bubble Styles */
+.tipso_bubble, .tipso_bubble > .tipso_arrow{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+.tipso_bubble {
+    position: absolute;
+	text-align: center;
+	border-radius: 6px;
+	z-index: 9999;
+	font-size: 12px;
+}
+.tipso{
+	border-bottom: 1px dotted;
+}
+.tipso_title {
+	border-radius: 6px 6px 0 0;
+}
+.tipso_content {
+  	word-wrap: break-word;
+	padding: 0.5em;
+}
+
+/* Tipso Bubble size classes - Similar to Foundation's syntax*/
+.tipso_bubble.tiny {
+	font-size: 0.6rem;
+}
+.tipso_bubble.small {
+	font-size: 0.8rem;
+}
+.tipso_bubble.default {
+	font-size: 1rem;
+}
+.tipso_bubble.large {
+	font-size: 1.2rem;
+	width: 100%;
+}
+
+/* Tipso Bubble Div */
+.tipso_bubble > .tipso_arrow{
+	position: absolute;
+	width: 0; height: 0;
+	border: 8px solid;
+	pointer-events: none;
+}
+.tipso_bubble.top > .tipso_arrow {
+	border-top-color: #000;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+}
+.tipso_bubble.bottom > .tipso_arrow {
+	border-bottom-color: #000;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -8px;
+}
+.tipso_bubble.left > .tipso_arrow {
+	border-left-color: #000;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	top: 50%;
+	left: 100%;
+	margin-top: -8px;
+}
+.tipso_bubble.right > .tipso_arrow {
+	border-right-color: #000;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	top: 50%;
+	right: 100%;
+	margin-top: -8px;
+}
+
+.tipso_bubble .top_right_corner, 
+.tipso_bubble.top_right_corner {
+	border-bottom-left-radius: 0;
+}
+
+.tipso_bubble .bottom_right_corner, 
+.tipso_bubble.bottom_right_corner  {
+	border-top-left-radius: 0;
+}
+
+.tipso_bubble .top_left_corner, 
+.tipso_bubble.top_left_corner {
+	border-bottom-right-radius: 0;
+}
+
+.tipso_bubble .bottom_left_corner, 
+.tipso_bubble.bottom_left_corner  {
+	border-top-right-radius: 0;
+}
 
 
 
