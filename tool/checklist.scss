@@ -85,11 +85,11 @@ body{
 			/*margin:10px auto;*/
 		}
 		.logo{
-			background: rgba(0, 0, 0, 0) url("http://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll 0 0;
+			background: rgba(0, 0, 0, 0) url("http://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll center center;
 			display: block;
 			float: left;
 			height: 32px;
-			margin: 6px 10px 10px 0;
+			margin: 6px 8px 10px 0;
 			overflow: hidden;
 			padding: 0;
 			text-indent: -9999px;
@@ -184,13 +184,6 @@ body{
 				background:none;
 				border-left:6px solid #aaccff;
 				border-radius:0;
-				@media all and (max-width: 350px) {
-					display:block;
-					width:5em;
-					font-size:11px;
-					font-weight:normal;
-					vertical-align:top;
-				}
 			}
 			label{
 				display:inline-block;
@@ -291,9 +284,6 @@ body{
 
 		.twitterTL{
 			width:300px;margin:15px auto 10px;border:1px solid #e1e8ec;border-width:0 1px 1px;
-			@media all and (max-width: 350px) {
-				margin:15px auto 10px;
-			}
 			@media all and (min-width: 950px) {
 				margin:15px 0;
 			}

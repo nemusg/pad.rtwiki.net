@@ -25,7 +25,7 @@ body .ads_bottom { width: auto; height: auto; margin: 0 auto; }
   body .sharelink { display: none; } }
 body #header { margin: 0 10px 20px; }
 @media all and (min-width: 480px) { body #header { max-width: 950px; min-width: 320px; /*margin:10px auto;*/ } }
-body #header .logo { background: transparent url("http://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll 0 0; display: block; float: left; height: 32px; margin: 6px 10px 10px 0; overflow: hidden; padding: 0; text-indent: -9999px; width: 32px; }
+body #header .logo { background: transparent url("http://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll center center; display: block; float: left; height: 32px; margin: 6px 8px 10px 0; overflow: hidden; padding: 0; text-indent: -9999px; width: 32px; }
 body #header .topicpath { font-size: 12px; }
 @media all and (min-width: 950px) { body .wrapper { width: 950px; margin: 0 auto 20px; } }
 body .wrapper .notice { text-align: center; }
@@ -44,7 +44,6 @@ body .panelInner .monsImg { float: left; display: inline-block; width: 32px; hei
 body .panelInner .maker .allCheck { margin-bottom: 5px; }
 body .panelInner .maker .allCheck label { padding: 4px; opacity: 1; border: 1px solid #ccc; background: #eee; }
 body .panelInner .maker h2 { display: inline-block; width: 5em; font-size: 11px; font-weight: normal; vertical-align: top; background: none; border-left: 6px solid #aaccff; border-radius: 0; }
-@media all and (max-width: 350px) { body .panelInner .maker h2 { display: block; width: 5em; font-size: 11px; font-weight: normal; vertical-align: top; } }
 body .panelInner .maker label { display: inline-block; padding: 0; cursor: pointer; border: 1px solid #eee; border-radius: 2px; opacity: 0.5; }
 body .panelInner .maker label.checked { background: #fec2b1; border: 1px solid #dd4500; opacity: 1; }
 body .panelInner .maker input { display: none; }
@@ -80,7 +79,6 @@ body .socialColumn .sharetxt div.socialBox ul .Google a { background: url("img/c
 :root body .socialColumn .sharetxt div.socialBox ul .Line a { background: url("img/common/line-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
 :root body .socialColumn .sharetxt div.socialBox ul .Google a { background: url("img/common/google-2x.png") 0 0 no-repeat; -webkit-background-size: 20px auto; background-size: 20px auto; }
 body .socialColumn .twitterTL { width: 300px; margin: 15px auto 10px; border: 1px solid #e1e8ec; border-width: 0 1px 1px; }
-@media all and (max-width: 350px) { body .socialColumn .twitterTL { margin: 15px auto 10px; } }
 @media all and (min-width: 950px) { body .socialColumn .twitterTL { margin: 15px 0; } }
 body .socialColumn .text { font-size: x-small; color: #666; }
 body .socialColumn .rwd { font-size: x-small; color: #666; text-align: center; }
