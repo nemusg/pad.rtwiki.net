@@ -87,9 +87,9 @@ $(function(){
 
 		if ( checkLength != 0) {// 1つ以上選択している
 
-			$('textarea[id="sharetext"]').val(puretext + checkRate + '％（所有数' + checkLength + '）http://pad.rtwiki.net/tool/' + file + '?' + compressIdList + ' #rtwiki_net #' + purehashtag);
-			$('#shareTW a').attr('href', 'https://twitter.com/intent/tweet?data-related=pkg_rtwiki&related=pkg_rtwiki&text=' + text + checkRate + '%EF%BC%85%EF%BC%88%E6%89%80%E6%9C%89%E6%95%B0' + checkLength + '%EF%BC%89+http://pad.rtwiki.net/tool/' + file + '?' + compressIdList + '%20%23rtwiki_net%20%23' + hashtag);
-			$('#shareLI a').attr('href', 'line://msg/text/' + text + checkRate + '%EF%BC%85%EF%BC%88%E6%89%80%E6%9C%89%E6%95%B0' + checkLength + '%EF%BC%89 http://pad.rtwiki.net/tool/' + file + '?' + compressIdList);
+			$('textarea[id="sharetext"]').val(puretext + checkRate + '％（所有数' + checkLength + '）https://pad.rtwiki.net/tool/' + file + '?' + compressIdList + ' #rtwiki_net #' + purehashtag);
+			$('#shareTW a').attr('href', 'https://twitter.com/intent/tweet?data-related=pkg_rtwiki&related=pkg_rtwiki&text=' + text + checkRate + '%EF%BC%85%EF%BC%88%E6%89%80%E6%9C%89%E6%95%B0' + checkLength + '%EF%BC%89+https://pad.rtwiki.net/tool/' + file + '?' + compressIdList + '%20%23rtwiki_net%20%23' + hashtag);
+			$('#shareLI a').attr('href', 'line://msg/text/' + text + checkRate + '%EF%BC%85%EF%BC%88%E6%89%80%E6%9C%89%E6%95%B0' + checkLength + '%EF%BC%89 https://pad.rtwiki.net/tool/' + file + '?' + compressIdList);
 
 		}
 
