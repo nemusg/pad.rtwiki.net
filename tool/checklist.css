@@ -25,7 +25,7 @@ body .ads_bottom { width: auto; height: auto; margin: 0 auto; }
   body .sharelink { display: none; } }
 body #header { margin: 0 10px 20px; }
 @media all and (min-width: 480px) { body #header { max-width: 950px; min-width: 320px; /*margin:10px auto;*/ } }
-body #header .logo { background: transparent url("http://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll center center; display: block; float: left; height: 32px; margin: 6px 8px 10px 0; overflow: hidden; padding: 0; text-indent: -9999px; width: 32px; }
+body #header .logo { background: transparent url("https://pad.rtwiki.net/image/pad/32dot.png") no-repeat scroll center center; display: block; float: left; height: 32px; margin: 6px 8px 10px 0; overflow: hidden; padding: 0; text-indent: -9999px; width: 32px; }
 body #header .topicpath { font-size: 12px; }
 @media all and (min-width: 950px) { body .wrapper { width: 950px; margin: 0 auto 20px; } }
 body .wrapper .notice { text-align: center; }
