@@ -5,4 +5,4 @@
 
 ## tool
 
-[モンスター所有率を表示]: http://nemusg.com/archives/clear.html
+[モンスター所有率を表示](http://nemusg.com/archives/clear.html)
